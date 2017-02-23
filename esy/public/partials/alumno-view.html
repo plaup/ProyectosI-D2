@@ -1,0 +1,25 @@
+<table class="table alumnotable">
+    <tr>
+        <td><h3>Details for {{alumno.dni + ' ' + alumno.nombreCompleto.nombre}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nombre</td>
+        <td>{{alumno.nombreCompleto.nombre}}</td>
+    </tr>
+    <tr>
+        <td>Apellidos</td>
+        <td>{{alumno.nombreCompleto.aPaterno + ' ' + alumno.nombreCompleto.aMaterno}}</td>
+    </tr>
+    <tr>
+        <td>Sexo</td>
+        <td>{{alumno.sexo}}</td>
+    </tr>
+    <tr>
+        <td>Fecha de nacimiento</td>
+        <td>{{alumno.fechaNacimiento}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editAlumno({dni:alumno.dni})">Edit</a>
+</div>
